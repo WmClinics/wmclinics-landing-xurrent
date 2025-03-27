@@ -13,9 +13,14 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://lavozdelcliente.wmclinics.es/'),
   title: 'WMClinics - La voz del cliente',
   description:
     'WM Clinics, líder europeo en salud y belleza, ofrece tratamientos innovadores en medicina estética y bienestar. 20 años de experiencia y un equipo médico experto.',
+  icons: {
+    icon: '/images/image.png',
+    apple: '/images/image.png',
+  },
   openGraph: {
     title: 'WMClinics - La voz del cliente',
     description:
@@ -32,6 +37,14 @@ export const metadata: Metadata = {
         alt: 'WMClinics Logo',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'WMClinics - La voz del cliente',
+    description: 'WM Clinics, líder europeo en salud y belleza, ofrece tratamientos innovadores en medicina estética y bienestar. 20 años de experiencia y un equipo médico experto.',
+    images: ['/images/logo.png'],
+    creator: '@wmclinics',
+    site: '@wmclinics',
   },
 }
 
